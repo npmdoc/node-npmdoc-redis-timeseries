@@ -74,22 +74,113 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.toString">
-            function <span class="apidocSignatureSpan">redis-timeseries.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">redis-timeseries.</span>timeseries.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.redis-timeseries.timeseries">module redis-timeseries.timeseries</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.timeseries">
+            function <span class="apidocSignatureSpan">redis-timeseries.</span>timeseries
+            <span class="apidocSignatureSpan">(redis, keyBase, granularities)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.redis-timeseries.toString">module redis-timeseries.toString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.redis-timeseries.timeseries.prototype">module redis-timeseries.timeseries.prototype</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.toString.toString">
-            function <span class="apidocSignatureSpan">redis-timeseries.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.days">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>days
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.exec">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>exec
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.getHits">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>getHits
+            <span class="apidocSignatureSpan">(key, gran, count, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.hours">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>hours
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.minutes">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>minutes
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.months">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>months
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.recordHit">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>recordHit
+            <span class="apidocSignatureSpan">(key, timestamp, increment)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.removeHit">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>removeHit
+            <span class="apidocSignatureSpan">(key, timestamp, decrement)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.seconds">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>seconds
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redis-timeseries.timeseries.prototype.weeks">
+            function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>weeks
+            <span class="apidocSignatureSpan">(i)</span>
             </a>
 
         </li>
@@ -152,15 +243,32 @@
 
 
 
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.redis-timeseries.timeseries" id="apidoc.module.redis-timeseries.timeseries">module redis-timeseries.timeseries</a></h1>
+
+
     <h2>
-        <a href="#apidoc.element.redis-timeseries.toString" id="apidoc.element.redis-timeseries.toString">
-        function <span class="apidocSignatureSpan">redis-timeseries.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.redis-timeseries.timeseries.timeseries" id="apidoc.element.redis-timeseries.timeseries.timeseries">
+        function <span class="apidocSignatureSpan">redis-timeseries.</span>timeseries
+        <span class="apidocSignatureSpan">(redis, keyBase, granularities)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
+    <li>description and source-code<pre class="apidocCodePre">timeseries = function (redis, keyBase, granularities) {
+  this.redis = redis;
+  this.keyBase = keyBase || 'stats';
+  this.pendingMulti = redis.multi();
+  this.granularities = granularities || {
+    '1second'  : { ttl: this.minutes(5), duration: 1 },
+    '1minute'  : { ttl: this.hours(1)  , duration: this.minutes(1) },
+    '5minutes' : { ttl: this.days(1)   , duration: this.minutes(5) },
+    '10minutes': { ttl: this.days(1)   , duration: this.minutes(10) },
+    '1hour'    : { ttl: this.days(7)   , duration: this.hours(1) },
+    '1day'     : { ttl: this.weeks(52) , duration: this.days(1) }
+  };
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -169,18 +277,321 @@
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.redis-timeseries.toString" id="apidoc.module.redis-timeseries.toString">module redis-timeseries.toString</a></h1>
+<h1><a href="#apidoc.module.redis-timeseries.timeseries.prototype" id="apidoc.module.redis-timeseries.timeseries.prototype">module redis-timeseries.timeseries.prototype</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.redis-timeseries.toString.toString" id="apidoc.element.redis-timeseries.toString.toString">
-        function <span class="apidocSignatureSpan">redis-timeseries.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.days" id="apidoc.element.redis-timeseries.timeseries.prototype.days">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>days
+        <span class="apidocSignatureSpan">(i)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">days = function (i) { return i*this.hours(24); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The default granularities are:
+
+```javascript
+{
+    '1second'  : { ttl: this.minutes(5), duration: 1 },
+    '1minute'  : { ttl: this.hours(1)  , duration: this.minutes(1) },
+    '5minutes' : { ttl: this.<span class="apidocCodeKeywordSpan">days</span>(1)   , duration: this.minutes(5) },
+    '10minutes': { ttl: this.days(1)   , duration: this.minutes(10) },
+    '1hour'    : { ttl: this.days(7)   , duration: this.hours(1) },
+    '1day'     : { ttl: this.weeks(52) , duration: this.days(1) }
+}
+```
+
+This means that the number of `hits per second` will be stored for `5 minutes`, and the corresponding hashset will expire afterwards
+.  Likewise, the number of `hits per minute` for a given key will be kept for an `hour`.  `Daily` counters on the other hand are
+ kept for a full year.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.exec" id="apidoc.element.redis-timeseries.timeseries.prototype.exec">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>exec
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exec = function (callback) {
+  // Reset pendingMulti before proceeding to
+  // avoid concurrent modifications
+  var current = this.pendingMulti;
+  this.pendingMulti = this.redis.multi();
+
+  current.exec(callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	// "timestamp" defaults to the current time
+// "increment" defaults to 1
+	//
+	ts.recordHit('your_stats_key')
+	  .recordHit('another_stats_key', timestamp)
+  .recordHit('another_stats_key', timestamp2, increment)
+	  â€¦
+	  .<span class="apidocCodeKeywordSpan">exec</span>();
+
+// Removing hits
+//
+// It's also possible to decrement the hits counter for
+// some key
+ts.removeHit('your_stats_key', [timestamp]).exec();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.getHits" id="apidoc.element.redis-timeseries.timeseries.prototype.getHits">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>getHits
+        <span class="apidocSignatureSpan">(key, gran, count, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getHits = function (key, gran, count, callback) {
+  var properties = this.granularities[gran],
+      currentTime = getCurrentTime();
+
+  if (typeof properties === "undefined")Â&nbsp;{
+    return callback(new Error("Unsupported granularity: "+gran));
+  }
+
+  if (count &gt; properties.ttl / properties.duration) {
+    return callback(new Error("Count: "+count+" exceeds the maximum stored slots for granularity: "+gran));
+  }
+
+  var from = getRoundedTime(properties.duration, currentTime - count*properties.duration),
+      to = getRoundedTime(properties.duration, currentTime);
+
+  for(var ts=from, multi=this.redis.multi(); ts&lt;=to; ts+=properties.duration) {
+    var keyTimestamp = getRoundedTime(properties.ttl, ts),
+        tmpKey = [this.keyBase, key, gran, keyTimestamp].join(':');
+
+    multi.hget(tmpKey, ts);
+  }
+
+  multi.exec(function(err, results) {
+    if (err) {
+      return callback(err);
+    }
+
+    for(var ts=from, i=0, data=[]; ts&lt;=to; ts+=properties.duration, i+=1) {
+      data.push([ts, results[i] ? parseInt(results[i], 10) : 0]);
+    }
+
+    return callback(null, data.slice(Math.max(data.length - count, 0)));
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    ts.removeHit('your_stats_key', [timestamp]).exec();
+	
+	// Querying statistics
+	//
+	// Returns "count" chunks of counters at the precision described by
+	// "granularity_label"
+	//
+	ts.<span class="apidocCodeKeywordSpan">getHits</span>('your_stats_key', granularity_label, count, function(err, data) {
+		// data.length == count
+		// data = [ [ts1, count1], [ts2, count2]... ]
+	});
+```
+
+## Defining custom statistics granularities
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.hours" id="apidoc.element.redis-timeseries.timeseries.prototype.hours">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>hours
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hours = function (i) { return i*this.minutes(60); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+For each key, `TimeSeries` stores statistics at different granularities. For further information about this, please refer to the
+ detailed [blog post](http://blog.apiaxle.com/post/storing-near-realtime-stats-in-redis/) from the ApiAxle project.
+
+The default granularities are:
+
+```javascript
+{
+    '1second'  : { ttl: this.minutes(5), duration: 1 },
+    '1minute'  : { ttl: this.<span class="apidocCodeKeywordSpan">hours</span>(1)  , duration: this.minutes(1) },
+    '5minutes' : { ttl: this.days(1)   , duration: this.minutes(5) },
+    '10minutes': { ttl: this.days(1)   , duration: this.minutes(10) },
+    '1hour'    : { ttl: this.days(7)   , duration: this.hours(1) },
+    '1day'     : { ttl: this.weeks(52) , duration: this.days(1) }
+}
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.minutes" id="apidoc.element.redis-timeseries.timeseries.prototype.minutes">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>minutes
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">minutes = function (i) { return i*60; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+For each key, `TimeSeries` stores statistics at different granularities. For further information about this, please refer to the
+ detailed [blog post](http://blog.apiaxle.com/post/storing-near-realtime-stats-in-redis/) from the ApiAxle project.
+
+The default granularities are:
+
+```javascript
+{
+    '1second'  : { ttl: this.<span class="apidocCodeKeywordSpan">minutes</span>(5), duration: 1 },
+    '1minute'  : { ttl: this.hours(1)  , duration: this.minutes(1) },
+    '5minutes' : { ttl: this.days(1)   , duration: this.minutes(5) },
+    '10minutes': { ttl: this.days(1)   , duration: this.minutes(10) },
+    '1hour'    : { ttl: this.days(7)   , duration: this.hours(1) },
+    '1day'     : { ttl: this.weeks(52) , duration: this.days(1) }
+}
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.months" id="apidoc.element.redis-timeseries.timeseries.prototype.months">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>months
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">months = function (i) { return i*(this.weeks(4)+this.days(2)); }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.recordHit" id="apidoc.element.redis-timeseries.timeseries.prototype.recordHit">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>recordHit
+        <span class="apidocSignatureSpan">(key, timestamp, increment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recordHit = function (key, timestamp, increment) {
+  var self = this;
+
+  Object.keys(this.granularities).forEach(function(gran) {
+    var properties = self.granularities[gran],
+        keyTimestamp = getRoundedTime(properties.ttl, timestamp),
+        tmpKey = [self.keyBase, key, gran, keyTimestamp].join(':'),
+        hitTimestamp = getRoundedTime(properties.duration, timestamp);
+
+   self.pendingMulti.hincrby(tmpKey, hitTimestamp, Math.floor(increment ||Â&nbsp;1));
+   self.pendingMulti.expireat(tmpKey, keyTimestamp + 2 * properties.ttl);
+  });
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	//
+	// This increments the counters for the
+	// stats keys you provide
+	//
+	// "timestamp" defaults to the current time
+// "increment" defaults to 1
+	//
+	ts.<span class="apidocCodeKeywordSpan">recordHit</span>('your_stats_key')
+	  .recordHit('another_stats_key', timestamp)
+  .recordHit('another_stats_key', timestamp2, increment)
+	  â€¦
+	  .exec();
+
+// Removing hits
+//
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.removeHit" id="apidoc.element.redis-timeseries.timeseries.prototype.removeHit">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>removeHit
+        <span class="apidocSignatureSpan">(key, timestamp, decrement)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeHit = function (key, timestamp, decrement) {
+  return this.recordHit(key, timestamp, -(decrement || 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	  â€¦
+	  .exec();
+
+    // Removing hits
+    //
+    // It's also possible to decrement the hits counter for
+    // some key
+    ts.<span class="apidocCodeKeywordSpan">removeHit</span>('your_stats_key', [timestamp]).exec();
+	
+	// Querying statistics
+	//
+	// Returns "count" chunks of counters at the precision described by
+	// "granularity_label"
+	//
+	ts.getHits('your_stats_key', granularity_label, count, function(err, data) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.seconds" id="apidoc.element.redis-timeseries.timeseries.prototype.seconds">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>seconds
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">seconds = function (i) { return i; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redis-timeseries.timeseries.prototype.weeks" id="apidoc.element.redis-timeseries.timeseries.prototype.weeks">
+        function <span class="apidocSignatureSpan">redis-timeseries.timeseries.prototype.</span>weeks
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">weeks = function (i) { return i*this.days(7); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+{
+    '1second'  : { ttl: this.minutes(5), duration: 1 },
+    '1minute'  : { ttl: this.hours(1)  , duration: this.minutes(1) },
+    '5minutes' : { ttl: this.days(1)   , duration: this.minutes(5) },
+    '10minutes': { ttl: this.days(1)   , duration: this.minutes(10) },
+    '1hour'    : { ttl: this.days(7)   , duration: this.hours(1) },
+    '1day'     : { ttl: this.<span class="apidocCodeKeywordSpan">weeks</span>(52) , duration: this.days(1) }
+}
+```
+
+This means that the number of `hits per second` will be stored for `5 minutes`, and the corresponding hashset will expire afterwards
+.  Likewise, the number of `hits per minute` for a given key will be kept for an `hour`.  `Daily` counters on the other hand are
+ kept for a full year.
+
+When querying for statistics, a granularity label is expected:
+...</pre></li>
     </ul>
 
 
