@@ -1,4 +1,7 @@
-# api documentation for  [redis-timeseries (v0.4.0)](https://github.com/tonyskn/node-redis-timeseries)  [![npm package](https://img.shields.io/npm/v/npmdoc-redis-timeseries.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redis-timeseries) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redis-timeseries.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redis-timeseries)
+# npmdoc-redis-timeseries
+
+#### basic api documentation for  [redis-timeseries (v0.4.0)](https://github.com/tonyskn/node-redis-timeseries)  [![npm package](https://img.shields.io/npm/v/npmdoc-redis-timeseries.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redis-timeseries) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redis-timeseries.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redis-timeseries)
+
 #### Manage timeseries data storage in Redis with ease
 
 [![NPM](https://nodei.co/npm/redis-timeseries.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/redis-timeseries)
@@ -64,7 +67,8 @@
     "scripts": {
         "test": "./node_modules/.bin/vows test/*.js"
     },
-    "version": "0.4.0"
+    "version": "0.4.0",
+    "bin": {}
 }
 ```
 
